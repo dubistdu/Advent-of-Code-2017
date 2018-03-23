@@ -4,11 +4,11 @@ map { |a| a.join.split("\t") }.
 map { |a| a.map(&:to_i) }
 
 num_array.map { |n|
-  i=0
-  until  n.select {|a| a % n[i] == 0 && a > n[i]}.count == 1
-  i += 1
+  i = 0
+  until n.select { |a| a % n[i] == 0 && a > n[i] }.count == 1
+    i += 1
   end
-  n.select { |a| a % n[i] == 0 && a > n[i]}.
-  first/n[i]
-  }.
-  sum
+  n.select { |a| a % n[i] == 0 && a > n[i] }.
+  first / n[i]
+}.
+sum
