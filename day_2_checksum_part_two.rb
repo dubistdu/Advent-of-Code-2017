@@ -1,6 +1,5 @@
 num_array =
-File.open("checksum.txt").map { |line| line.chomp.split(",") }.
-map { |a| a.join.split("\t") }.
+File.open("checksum.txt").map { |line| line.chomp.split("\t") }.
 map { |a| a.map(&:to_i) }
 
 puts num_array.map { |n|
