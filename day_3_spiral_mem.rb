@@ -12,7 +12,7 @@
 # odd_num -1 /2 is shortest step to access from where each corner lies (end_num)
 # also each row expands (8 * n) + previous number
 
-# how to ger beginning of the square number (number abover beginning)
+# how to get beginning of the square number (number above beginning)
 # ex) 81? answer= 50
 # beginning_num = end_num + 1 = (root - 1) * 4
 # def spiral_memory(input)
