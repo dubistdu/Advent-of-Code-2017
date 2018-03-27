@@ -23,8 +23,14 @@
 #   end_num_step = root - 1
 #   answer = end_num_step - difference % end_num_step
 
+# def spiral_memory(n)
+#   root = Math.sqrt(n).ceil
+#   root.odd? ? root : root += 1
+#   root - 1 - (root**2 - n) % (root - 1)
+# end
+
 def spiral_memory(n)
   root = Math.sqrt(n).ceil
-  root.odd? ? root : root += 1
+  root += 1 if root.even?
   root - 1 - (root**2 - n) % (root - 1)
 end
