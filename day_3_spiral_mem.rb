@@ -9,7 +9,7 @@
 #   73 74 75 76 77 78 79 80 81
 
 # each square right corner ends with odd power nums 1**2 3**2 5**2 7**2 9**2
-# odd_num -1 /2 is shortest step to access from where each corner lies (end_num)
+# odd_num -1 /2 is shortest step to the access from where each corner lies (end_num)
 # also each row expands (8 * n) + previous number
 
 # how to get beginning of the square number (number above beginning)
