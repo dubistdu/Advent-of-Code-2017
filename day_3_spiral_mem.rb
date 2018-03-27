@@ -14,7 +14,7 @@
 
 # how to get beginning of the square number (number above beginning)
 # ex) 81? answer= 50
-# beginning_num = end_num + 1 = (root - 1) * 4
+# beginning_num = end_num + 1 - (root - 1) * 4
 # def spiral_memory(input)
 #   root = Math.sqrt(n).ceil
 #   root.odd? ? root : root = root + 1
