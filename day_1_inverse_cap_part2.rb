@@ -2,9 +2,9 @@ class Captcha
   def inverse_captcha(captcha)
     captcha = captcha.digits.reverse
     new_captcha = captcha + captcha.take(captcha.length / 2)
-    num = []
-    new_captcha.each_with_index.map { |a,i| new_captcha[i] == new_captcha[i + captcha.length / 2] ? num << a : a }
-    num.sum
+    captchas = []
+    new_captcha.each_with_index { |a,i| new_captcha[i] == new_captcha[i + captcha.length / 2] ? captchas << a : a }
+    captchas.sum
   end
 end
 new_captcha = Captcha.new
