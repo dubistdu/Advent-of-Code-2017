@@ -1,9 +1,9 @@
 class Captcha
   def inverse_captcha(captcha)
-    num = []
+    captchas = []
     captcha = captcha.digits
-    captcha.each_with_index.map { |a,i| captcha[i] == captcha[i + 1] ? num << a : a }
-    num.sum + (captcha.first == captcha.last ? captcha.last : 0 )
+    captcha.each_with_index { |a,i| captcha[i] == captcha[i + 1] ? captchas << a : a }
+    captchas.sum + (captcha.first == captcha.last ? captcha.last : 0 )
   end
 end
 new_captcha = Captcha.new
